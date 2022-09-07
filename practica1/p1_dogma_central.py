@@ -1,7 +1,7 @@
 """
 Integrantes:
 - Martha Yunnuen Pacheco Ramírez - 315068830
-- Shai Léger Hernández | 316321761
+- Shai Léger Hernández - 316321761
 
 Práctica 1 -  El dogma central de la biología molecular - 17/Septiembre/2022
 """
