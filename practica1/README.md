@@ -1,13 +1,11 @@
 # Práctica 1 - El dogma central de la biología molecular
 
 ## Integrantes
-***
 
 - Martha Yunnuen Pacheco Ramírez - 315068830
 - Shai Léger Hernández - 316321761
 
 ## Descripción
-***
 Este script recibe un archivo FASTA, extrae el nombre y la secuencia, finalmente imprime los siguientes datos:
 
 - Nombre de la proteína
@@ -19,13 +17,11 @@ Este script recibe un archivo FASTA, extrae el nombre y la secuencia, finalmente
 > ⚠️El script imprime la cadena de aminoácidos solo cuando la secuencia tiene caracteres permitidos, codon de inicio y longitud válida.
 
 ## Requisitos
-***
 
 - Python 3.10 o superior
 > 💡 Es muy probable que el script funcione en versiones anteriores, sin embargo, no se ha probado.
 
 ## Ejecución
-***
 
 ```bash
 python p1_dogma_central.py [RUTA_ARCHIVO_FASTA]
@@ -33,7 +29,6 @@ python p1_dogma_central.py [RUTA_ARCHIVO_FASTA]
 > 💡 En la carpeta `data` se propocionan varios archivos FASTA.
 
 ## Ejemplos
-***
 
 - Botulinum neurotoxina tipo A 
     ```bash
@@ -99,7 +94,6 @@ python p1_dogma_central.py [RUTA_ARCHIVO_FASTA]
     ```
 
 ## Recursos
-***
 
 - [Práctica 1](https://nayeli-luis.github.io/GC-2023.1/#pr%C3%A1ctica-1--el-dogma-central-de-la-biolog%C3%ADa-molecular)
 - [Correct way to parse a FASTA file in Python](https://www.biostars.org/p/710/)
