@@ -156,8 +156,6 @@ def validar_secuencia(secuencia: str) -> bool:
 
 
 if __name__ == '__main__':
-    # TODO: Contestar cuestionario: https://docs.google.com/document/d/1Y41XTb0rQvdHyRiCrDcur6Ew9LqPvoxu0_o72LPtb_U/edit
-
     parser = argparse.ArgumentParser(
         description='Práctica 1 - Genómica Computacional: Este programa procesa y extrae información de archivos FASTA')
     parser.add_argument('ruta', type=str, help='Ruta del archivo FASTA a procesar')
@@ -171,7 +169,7 @@ if __name__ == '__main__':
         ARNm = obtener_arnm(complemento)
 
         print("____________________________________")
-        print("Gen #" + str(indice))  # TODO: Aquí no sé si es gen o como se le llama si tiene múltiples partes (ABCB1.txt)
+        print("Secuencia #" + str(indice))
         print("Nombre: " + nombre)
         print("Secuencia: " + secuencia)
         print("Complemento: " + complemento)
