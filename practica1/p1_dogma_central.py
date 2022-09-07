@@ -112,9 +112,10 @@ def obtener_arnm(secuencia: str) -> str:
 
 def obtener_aminoacidos(secuencia: str) -> str:
     """
+    Traduce la secuencia de RNAm a aminoácidos utilizando un diccionario de codones
 
-    :param secuencia:
-    :return:
+    :param secuencia: secuencia RNA a traducir
+    :return: secuencia de aminoácidos
     """
     aminoacidos = ''
     for i in range(0, len(secuencia), 3):
@@ -130,9 +131,13 @@ def obtener_aminoacidos(secuencia: str) -> str:
 
 def validar_secuencia(secuencia: str) -> bool:
     """
+    Valida que:
+    - Pueda separarse la secuencia en grupos de tres
+    - Sólo contenga caracteres de bases nitrogenadas
+    - Exista un codón inicial
 
-    :param secuencia:
-    :return:
+    :param secuencia: secuencia de ADN a validar
+    :return: si es válida o no
     """
     if len(secuencia) % 3 != 0:
         print("La longitud de la secuencia es inválida.")
@@ -152,7 +157,6 @@ def validar_secuencia(secuencia: str) -> bool:
 
 if __name__ == '__main__':
     # TODO: Contestar cuestionario: https://docs.google.com/document/d/1Y41XTb0rQvdHyRiCrDcur6Ew9LqPvoxu0_o72LPtb_U/edit
-    # TODO: Documentar el código
 
     parser = argparse.ArgumentParser(
         description='Práctica 1 - Genómica Computacional: Este programa procesa y extrae información de archivos FASTA')
