@@ -1,9 +1,9 @@
 """
 Integrantes:
+- Martha Yunnuen Pacheco Ramírez - 315068830
 - Shai Léger Hernández | 316321761
--
 
-Práctica 1 -  El dogma central de la biología molecular - 05/Septiembre/2022
+Práctica 1 -  El dogma central de la biología molecular - 17/Septiembre/2022
 """
 import argparse
 import re
@@ -120,7 +120,6 @@ def obtener_aminoacidos(secuencia: str) -> str:
     for i in range(0, len(secuencia), 3):
         codon = secuencia[i:i + 3]
 
-        # Aquí no sé que debe hacerse cuando se encuentra un STOP, ignorarlo? romper el ciclo? separar las cadenas?
         try:
             aminoacidos += TRADUCCION_CODONES[codon]
         except KeyError:
@@ -153,8 +152,7 @@ def validar_secuencia(secuencia: str) -> bool:
 
 if __name__ == '__main__':
     # TODO: Contestar cuestionario: https://docs.google.com/document/d/1Y41XTb0rQvdHyRiCrDcur6Ew9LqPvoxu0_o72LPtb_U/edit
-    # TODO: Revisar y documentar el código
-    # TODO: Crear un README con explicaciones de ejecucion y ejemplos?
+    # TODO: Documentar el código
 
     parser = argparse.ArgumentParser(
         description='Práctica 1 - Genómica Computacional: Este programa procesa y extrae información de archivos FASTA')
@@ -169,12 +167,12 @@ if __name__ == '__main__':
         ARNm = obtener_arnm(complemento)
 
         print("____________________________________")
-        print("Gen #" + str(indice))  # Aquí no sé si es gen o como se le llama si tiene múltiples partes (ABCB1.txt)
+        print("Gen #" + str(indice))  # TODO: Aquí no sé si es gen o como se le llama si tiene múltiples partes (ABCB1.txt)
         print("Nombre: " + nombre)
-        print("Secuencia: " + secuencia)
-        print("Complemento: " + complemento)
-        print("ARNm: " + ARNm)
+        print("Secuencia: " + secuencia[:105])
+        print("Complemento: " + complemento[:105])
+        print("ARNm: " + ARNm[:105])
         print("Aminoácidos: ", end='')
         if validar_secuencia(secuencia):
             aminoacidos = obtener_aminoacidos(ARNm)
-            print(aminoacidos)
+            print(aminoacidos[:105])
