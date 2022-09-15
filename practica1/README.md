@@ -2,7 +2,6 @@
 
 ## Integrantes
 
-- Martha Yunnuen Pacheco Ramírez - 315068830
 - Shai Léger Hernández - 316321761
 
 ## Descripción
